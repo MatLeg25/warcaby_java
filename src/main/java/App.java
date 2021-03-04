@@ -8,12 +8,12 @@ public class App {
         int size = 8;
         initGame gameBoard = new initGame(size);
         gameBoard.initBoard(); //create game board
-        gameBoard.getBoard(size);
+        //gameBoard.getBoard(size);
 
         int c= 0;
         while (!gameEnd) {
-            //gameBoard.getBoard(size);
-            gameBoard.showBoard(size);
+            gameBoard.getBoard(size);
+            //gameBoard.showBoard(size);
             System.out.println("Select token to move: ");
             Scanner move = new Scanner(System.in);
             int selectedToken = move.nextInt();

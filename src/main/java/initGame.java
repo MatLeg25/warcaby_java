@@ -19,11 +19,23 @@ public class initGame {
         }
     }
 
+
+/*
+    static Token[] Tokens = new Token[size*size];
+
+    public Token(int posX,int posY, int ide, String symbol) {
+        this.positionX = posX;
+        this.positionY = posY;
+        this.id = ide;
+        this.name = symbol;
+    }*/
+
+
     public void getBoard(int size) {
 
         //fill label X
         for (int i = 0; i < size; i++) {
-            labelX[i] = String.valueOf(i + 1);
+            labelX[i] = String.valueOf(i);
         }
         //display Label X by for each loop
         System.out.print("+ ");
